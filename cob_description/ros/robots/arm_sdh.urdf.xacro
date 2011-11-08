@@ -12,7 +12,7 @@
   <include filename="$(find cob_description)/ros/calibration/$(env ROBOT).urdf.xacro" />
 
   <!-- cob arm-->
-  <include filename="$(find cob_description)/ros/urdf/arm_v0/arm.urdf.xacro" />
+  <include filename="$(find cob_description)/ros/urdf/arm_v2/arm.urdf.xacro" />
 
   <!-- cob sdh-->
   <include filename="$(find cob_description)/ros/urdf/sdh_v0/sdh.urdf.xacro" />
@@ -32,27 +32,27 @@
 		</inertial>
 
 		<visual>
-		   <origin xyz="0 0 0.25" rpy="0 0 0" />
+		   <origin xyz="-0.135 -0.035 0.2525" rpy="0 0 0" />
 		   <geometry>
-		   	  <box size="0.6 0.4 0.4"/>
+		   	  <box size="1.8 0.82 0.505"/>
 			  <!--cylinder radius="0.1" length="0.5"/-->
 		   </geometry>
 		   <material name="Blue" />
 		</visual>
 
 		<collision>
-		   <origin xyz="0 0 0.25" rpy="0 0 0" />
+		   <origin xyz="-0.135 -0.035 0.2525" rpy="0 0 0" />
 		   <geometry>
-		   	  <box size="0.6 0.4 0.4"/>
+		   	  <box size="1.65 0.67 0.505"/>
 			  <!--cylinder radius="0.1" length="0.5"/-->
 		   </geometry>
 		</collision>
 	</link>
 
   <!-- arm -->
-  <xacro:cob_arm_v0 name="arm" parent="dummy_link">
-    <origin xyz="0 0 0.5" rpy="3.1415926 0 0" />
-  </xacro:cob_arm_v0>
+  <xacro:cob_arm_v2 name="arm" parent="dummy_link">
+    <origin xyz="0 0 0.528" rpy="3.1415926 0 0" />
+  </xacro:cob_arm_v2>
   
   <!-- sdh -->
   <xacro:cob_sdh_v0 name="sdh" parent="arm_7_link">

@@ -1,0 +1,49 @@
+#group:
+#  group_name: <group_name>
+#  component_name: <component_name>
+#  buttons: [[button_name1,function_name1,parameter_name2,
+#    [button_name2,function_name2,parameter_name2]]
+
+group1:
+  group_name: forcetorque
+  component_name: ftq
+  buttons: [[calibrate,trigger,calibrate],
+    [init,trigger,init]]
+group2:
+  group_name: arm settings
+  component_name: arm
+  buttons: [[stop,trigger,stop],
+    [init,trigger,init],
+    [recover,trigger,recover],
+    [undefined mode,mode,undefined],
+    [position mode,mode,position],
+    [velocity mode,mode,velocity],
+    [gravcomp mode,mode,gravcomp]]
+group3:
+  group_name: arm pos
+  component_name: arm
+  buttons: [[stop,trigger,stop],
+    [home,move,home],
+    [folded,move,folded],
+    [folded1,move,folded1],
+    [folded2,move,folded2],
+    [pregrasp,move,pregrasp],
+    [pregrasp1,move,pregrasp1],
+    [grasp,move,grasp],
+    [look at table,move,look_at_table],
+    [overtray,move,overtray],
+    [tray,move,tray],
+    [wave in,move,wavein],
+    [wave out,move,waveout]]
+group4:
+  group_name: sdh
+  component_name: sdh
+  buttons: [[stop,trigger,stop],
+    [init,trigger,init],
+    [home,move,home],
+    [cyl. closed,move,cylclosed],
+    [cyl. open,move,cylopen],
+    [spher. closed,move,spherclosed],
+    [spher. open,move,spheropen],
+    [point,move,point],
+    [fist,move,fist]]
